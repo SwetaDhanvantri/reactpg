@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slider</title>
+        <script>
+   ind=0;
+   function slider(){
+       var arr=["images/2.png", "images/3.png", "images/4.png", "images/5.png","images/1.png"];
+       document.getElementById("slide").src=arr[ind];
+       ind++;
+       if(ind==5){ind=0};
+   }setInterval(slider,3000);
+        </script>
+    </head>
+    <body>
+        <img src="images/1.png" height="700" width="100%" id="slide"/>
+    </body>
+</html>

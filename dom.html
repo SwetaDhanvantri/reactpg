@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    function ret(){
+      var name= document.getElementById("abc").value;
+      if(name!=""){
+          document.getElementById("result").innerHTML="Your Name is :"+ name;
+      } else{
+        alert("Plese fill your name");
+      }
+      
+    }
+       
+       
+    </script>
+</head>
+<body>
+    Name:<input type="text" id="abc"><br/>
+    <button type="button " onclick="ret()"></button>
+    <p id="result"></p>
+</body>
+</html>
